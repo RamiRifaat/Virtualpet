@@ -5,22 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VirtualPet</title>
 </head>
 
-<body style="height: 500px; width:1000px;border:1px solid black ">
+<body style="height: 800px; width:900px;border:1px solid black ">
     <div style="text-align: center"></div>
-    <h1>This is my virtual pet</h1>
+    <h1>Welcome to the Rancor cave!</h1>
+    <p1>This is your Rancor ___ . Be sure to feed it, spend time with it , and make sure the tempurature doesnt get too hot!</p1>
+
+    <img src="images/rancorHappy.jpg" alt="Happy Rancor">
+    <p id="petCondition">Happy Rancor</p>
+
+    <div style="position:absolute; top:600px;left:300px;">
+        <h3> Rancor stomach</h3>
+        <meter id="belly meter" min="0" max="10" value="5"></meter>
+        <p id="happy belly"> 5</p>
+        <button id="belly-button" onclick="feedPet();">Feed me!</button>
+    </div>
+    <div style="position:absolute; top:600px;left:500px;">
+        <h3> Rancor mood</h3>
+        <meter id="mood meter" min="0" max="10" value="5"></meter>
+        <p id="happy mood"> 5</p>
+        <button id="mood-button" onclick="playFetch();">Fetch </button>
+    </div>
+    <div style="position:absolute; top:600px;left:100px;">
+        <h3> Rancor tempurature</h3>
+        <meter id="tempurature meter" min="0" max="10" value="5"></meter>
+        <p id="good tempurature"> 5</p>
+        <button id="temp-button" onclick="fanPet();">fan me!</button>
+    </div>
     <script src="js/pet.js"></script>
-    <img src="images/eevee-happy.png" alt="Happy Evee">
-
-
-    <h3> Evee's full belly</h3>
-    <meter id="belly meter" min="0" max="10" value="5"></meter>
-    <p id="happy belly"> 5</p>
-    <button id="belly-button">Feed me!</button>
-
-
 </body>
 
 </html>
